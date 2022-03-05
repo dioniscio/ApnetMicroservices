@@ -25,7 +25,7 @@ namespace Catalog.API.Controllers
             _logger = logger;
         }
 
-        [HttpGet]
+        [HttpGet("FF")]
         public async Task<ActionResult> GetProducts()
         {
             var products = await _reposiiroty.GetProducts();
